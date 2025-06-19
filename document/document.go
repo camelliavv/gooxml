@@ -938,3 +938,14 @@ func (d Document) Bookmarks() []Bookmark {
 	}
 	return ret
 }
+
+func (d *Document) AddNumbering() {
+	if d.Numbering.X() != nil {
+		return
+	}
+
+	d.Numbering = NewNumbering()
+	d.Numbering.InitializeDefault()
+	d.ContentTypes.AddOverride("/word/numbering.xml", "application/vnd.openxmlformats-officedocument.wordprocessingml.numbering+xml")
+	d.docRels.AddRelationship("numbering.xml", gooxml.NumberingType)
+}
