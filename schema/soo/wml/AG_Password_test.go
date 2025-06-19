@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"testing"
 
-	"github.com/carmel/gooxml/schema/soo/wml"
+	"gooxml/schema/soo/wml"
 )
 
 func TestAG_PasswordConstructor(t *testing.T) {

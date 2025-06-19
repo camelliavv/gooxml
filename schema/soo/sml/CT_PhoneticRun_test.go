@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"testing"
 
-	"github.com/carmel/gooxml/schema/soo/sml"
+	"gooxml/schema/soo/sml"
 )
 
 func TestCT_PhoneticRunConstructor(t *testing.T) {

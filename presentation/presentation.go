@@ -21,14 +21,14 @@ import (
 	"path"
 	"strings"
 
-	"github.com/carmel/gooxml"
-	"github.com/carmel/gooxml/common"
-	"github.com/carmel/gooxml/measurement"
-	"github.com/carmel/gooxml/schema/soo/dml"
-	"github.com/carmel/gooxml/schema/soo/ofc/sharedTypes"
-	"github.com/carmel/gooxml/schema/soo/pkg/relationships"
-	"github.com/carmel/gooxml/schema/soo/pml"
-	"github.com/carmel/gooxml/zippkg"
+	"gooxml"
+	"gooxml/common"
+	"gooxml/measurement"
+	"gooxml/schema/soo/dml"
+	"gooxml/schema/soo/ofc/sharedTypes"
+	"gooxml/schema/soo/pkg/relationships"
+	"gooxml/schema/soo/pml"
+	"gooxml/zippkg"
 )
 
 // Presentation is the a presentation base document.

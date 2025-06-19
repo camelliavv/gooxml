@@ -13,8 +13,8 @@ import (
 	"encoding/xml"
 	"fmt"
 
-	"github.com/carmel/gooxml"
-	"github.com/carmel/gooxml/schema/soo/dml"
+	"gooxml"
+	"gooxml/schema/soo/dml"
 )
 
 type CT_Marker struct {

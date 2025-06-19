@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"testing"
 
-	"github.com/carmel/gooxml/schema/soo/wml"
+	"gooxml/schema/soo/wml"
 )
 
 func TestCT_ObjectEmbedConstructor(t *testing.T) {

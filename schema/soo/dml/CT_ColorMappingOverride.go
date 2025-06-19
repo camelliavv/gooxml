@@ -12,7 +12,7 @@ package dml
 import (
 	"encoding/xml"
 
-	"github.com/carmel/gooxml"
+	"gooxml"
 )
 
 type CT_ColorMappingOverride struct {

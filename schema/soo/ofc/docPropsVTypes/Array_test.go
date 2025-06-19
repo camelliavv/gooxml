@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"testing"
 
-	"github.com/carmel/gooxml/schema/soo/ofc/docPropsVTypes"
+	"gooxml/schema/soo/ofc/docPropsVTypes"
 )
 
 func TestArrayConstructor(t *testing.T) {

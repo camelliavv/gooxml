@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"testing"
 
-	"github.com/carmel/gooxml/schema/soo/dml/chartDrawing"
+	"gooxml/schema/soo/dml/chartDrawing"
 )
 
 func TestCT_AbsSizeAnchorConstructor(t *testing.T) {

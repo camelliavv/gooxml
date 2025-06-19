@@ -5,10 +5,10 @@ package main
 import (
 	"log"
 
-	"github.com/carmel/gooxml/common"
-	"github.com/carmel/gooxml/document"
-	"github.com/carmel/gooxml/measurement"
-	"github.com/carmel/gooxml/schema/soo/wml"
+	"gooxml/common"
+	"gooxml/document"
+	"gooxml/measurement"
+	"gooxml/schema/soo/wml"
 )
 
 func main() {

@@ -6,9 +6,9 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/carmel/gooxml/document"
-	"github.com/carmel/gooxml/measurement"
-	"github.com/carmel/gooxml/schema/soo/wml"
+	"gooxml/document"
+	"gooxml/measurement"
+	"gooxml/schema/soo/wml"
 
 	"github.com/go-ole/go-ole/oleutil"
 )

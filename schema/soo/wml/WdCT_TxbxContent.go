@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"fmt"
 
-	"github.com/carmel/gooxml"
+	"gooxml"
 )
 
 type WdCT_TxbxContent struct {

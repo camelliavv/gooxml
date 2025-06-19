@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/carmel/gooxml/document"
+	"gooxml/document"
 )
 
 func BenchmarkAddPara(b *testing.B) {

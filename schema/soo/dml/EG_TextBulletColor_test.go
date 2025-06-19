@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"testing"
 
-	"github.com/carmel/gooxml/schema/soo/dml"
+	"gooxml/schema/soo/dml"
 )
 
 func TestEG_TextBulletColorConstructor(t *testing.T) {

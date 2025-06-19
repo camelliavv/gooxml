@@ -10,7 +10,7 @@ package common_test
 import (
 	"testing"
 
-	"github.com/carmel/gooxml/schema/soo/wml"
+	"gooxml/schema/soo/wml"
 )
 
 // Fields of these types must be integers per the spec, but Google doc

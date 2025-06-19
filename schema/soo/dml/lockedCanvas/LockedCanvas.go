@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"fmt"
 
-	"github.com/carmel/gooxml/schema/soo/dml"
+	"gooxml/schema/soo/dml"
 )
 
 type LockedCanvas struct {

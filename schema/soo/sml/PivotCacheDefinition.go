@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"strconv"
 
-	"github.com/carmel/gooxml"
+	"gooxml"
 )
 
 type PivotCacheDefinition struct {

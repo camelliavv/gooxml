@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"testing"
 
-	"github.com/carmel/gooxml/schema/soo/sml"
+	"gooxml/schema/soo/sml"
 )
 
 func TestCT_XmlPrConstructor(t *testing.T) {

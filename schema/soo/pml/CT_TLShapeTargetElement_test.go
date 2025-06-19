@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"testing"
 
-	"github.com/carmel/gooxml/schema/soo/pml"
+	"gooxml/schema/soo/pml"
 )
 
 func TestCT_TLShapeTargetElementConstructor(t *testing.T) {

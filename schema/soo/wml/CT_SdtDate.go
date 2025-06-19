@@ -14,7 +14,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/carmel/gooxml"
+	"gooxml"
 )
 
 type CT_SdtDate struct {

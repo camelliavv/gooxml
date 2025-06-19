@@ -14,7 +14,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/carmel/gooxml"
+	"gooxml"
 )
 
 type CT_ExternalSheetData struct {

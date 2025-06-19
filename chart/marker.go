@@ -8,10 +8,10 @@
 package chart
 
 import (
-	"github.com/carmel/gooxml/drawing"
+	"gooxml/drawing"
 
-	"github.com/carmel/gooxml/schema/soo/dml"
-	crt "github.com/carmel/gooxml/schema/soo/dml/chart"
+	"gooxml/schema/soo/dml"
+	crt "gooxml/schema/soo/dml/chart"
 )
 
 type Marker struct {

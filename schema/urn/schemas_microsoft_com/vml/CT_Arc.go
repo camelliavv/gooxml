@@ -14,11 +14,11 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/carmel/gooxml"
-	"github.com/carmel/gooxml/schema/soo/ofc/sharedTypes"
-	"github.com/carmel/gooxml/schema/urn/schemas_microsoft_com/office/excel"
-	"github.com/carmel/gooxml/schema/urn/schemas_microsoft_com/office/powerpoint"
-	"github.com/carmel/gooxml/schema/urn/schemas_microsoft_com/office/word"
+	"gooxml"
+	"gooxml/schema/soo/ofc/sharedTypes"
+	"gooxml/schema/urn/schemas_microsoft_com/office/excel"
+	"gooxml/schema/urn/schemas_microsoft_com/office/powerpoint"
+	"gooxml/schema/urn/schemas_microsoft_com/office/word"
 )
 
 type CT_Arc struct {

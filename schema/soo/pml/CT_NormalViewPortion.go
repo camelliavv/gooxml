@@ -14,7 +14,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/carmel/gooxml/schema/soo/dml"
+	"gooxml/schema/soo/dml"
 )
 
 type CT_NormalViewPortion struct {

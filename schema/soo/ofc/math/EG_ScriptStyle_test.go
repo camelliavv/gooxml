@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"testing"
 
-	"github.com/carmel/gooxml/schema/soo/ofc/math"
+	"gooxml/schema/soo/ofc/math"
 )
 
 func TestEG_ScriptStyleConstructor(t *testing.T) {

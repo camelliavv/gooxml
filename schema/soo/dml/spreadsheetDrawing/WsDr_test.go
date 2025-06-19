@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"testing"
 
-	"github.com/carmel/gooxml/schema/soo/dml/spreadsheetDrawing"
+	"gooxml/schema/soo/dml/spreadsheetDrawing"
 )
 
 func TestWsDrConstructor(t *testing.T) {

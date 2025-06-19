@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"testing"
 
-	"github.com/carmel/gooxml/schema/urn/schemas_microsoft_com/office/word"
+	"gooxml/schema/urn/schemas_microsoft_com/office/word"
 )
 
 func TestCT_AnchorLockConstructor(t *testing.T) {

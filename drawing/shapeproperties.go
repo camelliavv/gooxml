@@ -8,11 +8,11 @@
 package drawing
 
 import (
-	"github.com/carmel/gooxml"
-	"github.com/carmel/gooxml/color"
-	"github.com/carmel/gooxml/measurement"
+	"gooxml"
+	"gooxml/color"
+	"gooxml/measurement"
 
-	"github.com/carmel/gooxml/schema/soo/dml"
+	"gooxml/schema/soo/dml"
 )
 
 type ShapeProperties struct {

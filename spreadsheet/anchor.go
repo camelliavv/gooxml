@@ -8,7 +8,7 @@
 package spreadsheet
 
 import (
-	"github.com/carmel/gooxml/measurement"
+	"gooxml/measurement"
 )
 
 // Anchor is the interface implemented by anchors. It's modeled after the most

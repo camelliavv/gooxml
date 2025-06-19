@@ -10,7 +10,7 @@ package gooxml_test
 import (
 	"testing"
 
-	"github.com/carmel/gooxml"
+	"gooxml"
 )
 
 func TestFloat32(t *testing.T) {

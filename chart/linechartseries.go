@@ -8,11 +8,11 @@
 package chart
 
 import (
-	"github.com/carmel/gooxml/color"
-	"github.com/carmel/gooxml/drawing"
-	"github.com/carmel/gooxml/measurement"
-	"github.com/carmel/gooxml/schema/soo/dml"
-	crt "github.com/carmel/gooxml/schema/soo/dml/chart"
+	"gooxml/color"
+	"gooxml/drawing"
+	"gooxml/measurement"
+	"gooxml/schema/soo/dml"
+	crt "gooxml/schema/soo/dml/chart"
 )
 
 // LineChartSeries is the data series for a line chart.

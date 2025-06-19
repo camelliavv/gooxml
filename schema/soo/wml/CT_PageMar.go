@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"fmt"
 
-	"github.com/carmel/gooxml/schema/soo/ofc/sharedTypes"
+	"gooxml/schema/soo/ofc/sharedTypes"
 )
 
 type CT_PageMar struct {

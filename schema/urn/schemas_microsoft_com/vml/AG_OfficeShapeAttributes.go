@@ -14,7 +14,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/carmel/gooxml/schema/soo/ofc/sharedTypes"
+	"gooxml/schema/soo/ofc/sharedTypes"
 )
 
 type AG_OfficeShapeAttributes struct {

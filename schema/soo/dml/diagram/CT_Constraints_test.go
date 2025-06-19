@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"testing"
 
-	"github.com/carmel/gooxml/schema/soo/dml/diagram"
+	"gooxml/schema/soo/dml/diagram"
 )
 
 func TestCT_ConstraintsConstructor(t *testing.T) {

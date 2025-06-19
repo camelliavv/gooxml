@@ -4,11 +4,11 @@ package main
 import (
 	"log"
 
-	"github.com/carmel/gooxml/color"
-	"github.com/carmel/gooxml/measurement"
-	"github.com/carmel/gooxml/schema/soo/dml"
+	"gooxml/color"
+	"gooxml/measurement"
+	"gooxml/schema/soo/dml"
 
-	"github.com/carmel/gooxml/presentation"
+	"gooxml/presentation"
 )
 
 func main() {

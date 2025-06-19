@@ -8,7 +8,7 @@
 package chart
 
 import (
-	crt "github.com/carmel/gooxml/schema/soo/dml/chart"
+	crt "gooxml/schema/soo/dml/chart"
 )
 
 // Bar3DChart is a 3D bar chart.

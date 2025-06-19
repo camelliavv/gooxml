@@ -14,7 +14,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/carmel/gooxml"
+	"gooxml"
 )
 
 type Vector struct {

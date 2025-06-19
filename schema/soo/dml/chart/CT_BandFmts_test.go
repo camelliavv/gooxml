@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"testing"
 
-	"github.com/carmel/gooxml/schema/soo/dml/chart"
+	"gooxml/schema/soo/dml/chart"
 )
 
 func TestCT_BandFmtsConstructor(t *testing.T) {

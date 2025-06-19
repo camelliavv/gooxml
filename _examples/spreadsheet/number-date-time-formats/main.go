@@ -5,7 +5,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/carmel/gooxml/spreadsheet"
+	"gooxml/spreadsheet"
 )
 
 func main() {

@@ -12,8 +12,8 @@ package spreadsheetDrawing
 import (
 	"encoding/xml"
 
-	"github.com/carmel/gooxml"
-	"github.com/carmel/gooxml/schema/soo/dml"
+	"gooxml"
+	"gooxml/schema/soo/dml"
 )
 
 type CT_OneCellAnchor struct {

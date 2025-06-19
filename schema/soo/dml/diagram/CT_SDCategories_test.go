@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"testing"
 
-	"github.com/carmel/gooxml/schema/soo/dml/diagram"
+	"gooxml/schema/soo/dml/diagram"
 )
 
 func TestCT_SDCategoriesConstructor(t *testing.T) {

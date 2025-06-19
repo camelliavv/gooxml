@@ -13,10 +13,10 @@ import (
 	"encoding/xml"
 	"strconv"
 
-	"github.com/carmel/gooxml"
-	"github.com/carmel/gooxml/schema/urn/schemas_microsoft_com/office/excel"
-	"github.com/carmel/gooxml/schema/urn/schemas_microsoft_com/office/powerpoint"
-	"github.com/carmel/gooxml/schema/urn/schemas_microsoft_com/office/word"
+	"gooxml"
+	"gooxml/schema/urn/schemas_microsoft_com/office/excel"
+	"gooxml/schema/urn/schemas_microsoft_com/office/powerpoint"
+	"gooxml/schema/urn/schemas_microsoft_com/office/word"
 )
 
 type Image struct {
