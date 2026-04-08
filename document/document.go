@@ -949,3 +949,36 @@ func (d *Document) AddNumbering() {
 	d.ContentTypes.AddOverride("/word/numbering.xml", "application/vnd.openxmlformats-officedocument.wordprocessingml.numbering+xml")
 	d.docRels.AddRelationship("numbering.xml", gooxml.NumberingType)
 }
+
+func (d *Document) AddFootnote(content string) int64 {
+	if d.footNotes == nil {
+		d.footNotes = wml.NewFootnotes()
+	}
+
+	fn := wml.NewCT_FtnEdn()
+	fn.IdAttr = int64(len(d.footNotes.Footnote) + 1)
+
+	p := wml.NewCT_P()
+	run := wml.NewCT_R()
+
+	ic := wml.NewEG_RunInnerContent()
+	ic.T = wml.NewCT_Text()
+	ic.T.Content = content
+	run.EG_RunInnerContent = append(run.EG_RunInnerContent, ic)
+
+	runContent := wml.NewEG_PContent()
+	contentRun := wml.NewEG_ContentRunContent()
+	contentRun.R = run
+	runContent.EG_ContentRunContent = append(runContent.EG_ContentRunContent, contentRun)
+	p.EG_PContent = append(p.EG_PContent, runContent)
+
+	blockElt := wml.NewEG_BlockLevelElts()
+	contentBlock := wml.NewEG_ContentBlockContent()
+	contentBlock.P = append(contentBlock.P, p)
+	blockElt.EG_ContentBlockContent = append(blockElt.EG_ContentBlockContent, contentBlock)
+
+	fn.EG_BlockLevelElts = append(fn.EG_BlockLevelElts, blockElt)
+	d.footNotes.Footnote = append(d.footNotes.Footnote, fn)
+
+	return fn.IdAttr
+}

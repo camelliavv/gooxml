@@ -281,3 +281,16 @@ func (r Run) AddDrawingInline(img common.ImageRef) (InlineDrawing, error) {
 
 	return inline, nil
 }
+
+func (r Run) AddFootnoteReference(fnID int64) {
+	xRun := r.X()
+	if xRun == nil {
+		return
+	}
+
+	ic := wml.NewEG_RunInnerContent()
+	ic.FootnoteReference = wml.NewCT_FtnEdnRef()
+	ic.FootnoteReference.IdAttr = fnID
+
+	xRun.EG_RunInnerContent = append(xRun.EG_RunInnerContent, ic)
+}

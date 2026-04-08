@@ -244,3 +244,24 @@ func (p Paragraph) SetNumberingDefinitionByID(abstractNumberID int64) {
 	lvl.ValAttr = int64(abstractNumberID)
 	p.x.PPr.NumPr.NumId = lvl
 }
+
+func (p Paragraph) AddFootnoteReference(fnID int64) {
+	xPar := p.X()
+	if xPar == nil {
+		return
+	}
+
+	newRun := wml.NewCT_R()
+	ic := wml.NewEG_RunInnerContent()
+	ic.FootnoteReference = wml.NewCT_FtnEdnRef()
+	ic.FootnoteReference.IdAttr = fnID
+
+	newRun.EG_RunInnerContent = append(newRun.EG_RunInnerContent, ic)
+
+	runContent := wml.NewEG_PContent()
+	contentRun := wml.NewEG_ContentRunContent()
+	contentRun.R = newRun
+	runContent.EG_ContentRunContent = append(runContent.EG_ContentRunContent, contentRun)
+
+	xPar.EG_PContent = append(xPar.EG_PContent, runContent)
+}
