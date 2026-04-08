@@ -162,9 +162,6 @@ func (n Numbering) initializeNumbered(format wml.ST_NumberFormat, textPattern st
 
 	n.x.AbstractNum = append(n.x.AbstractNum, abs)
 	abs.AbstractNumIdAttr = nextID
-	const indentStart = 720
-	const indentDelta = 720
-	const hangingIndent = 360
 	for i := 0; i < 9; i++ {
 		lvl := wml.NewCT_Lvl()
 		lvl.IlvlAttr = int64(i)
@@ -185,15 +182,6 @@ func (n Numbering) initializeNumbered(format wml.ST_NumberFormat, textPattern st
 
 		lvl.LvlJc = wml.NewCT_Jc()
 		lvl.LvlJc.ValAttr = wml.ST_JcLeft
-
-		lvl.PPr = wml.NewCT_PPrGeneral()
-
-		indent := int64(i*indentDelta + indentStart)
-		lvl.PPr.Ind = wml.NewCT_Ind()
-		lvl.PPr.Ind.LeftAttr = &wml.ST_SignedTwipsMeasure{}
-		lvl.PPr.Ind.LeftAttr.Int64 = gooxml.Int64(indent)
-		lvl.PPr.Ind.HangingAttr = &sharedTypes.ST_TwipsMeasure{}
-		lvl.PPr.Ind.HangingAttr.ST_UnsignedDecimalNumber = gooxml.Uint64(uint64(hangingIndent))
 
 		abs.Lvl = append(abs.Lvl, lvl)
 	}
