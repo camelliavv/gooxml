@@ -66,3 +66,42 @@ func (n NumberingLevel) RunProperties() RunProperties {
 	}
 	return RunProperties{n.x.RPr}
 }
+
+// SetStart sets the starting number for this level.
+func (n NumberingLevel) SetStart(start int64) {
+	if n.x.Start == nil {
+		n.x.Start = wml.NewCT_DecimalNumber()
+	}
+	n.x.Start.ValAttr = start
+}
+
+// Start returns the starting number for this level, or 1 if not set.
+func (n NumberingLevel) Start() int64 {
+	if n.x.Start == nil {
+		return 1
+	}
+	return n.x.Start.ValAttr
+}
+
+// SetRestartLevel sets the level at which numbering restarts.
+// If restartLevel is -1, numbering is continuous (never restarts).
+// Otherwise, numbering restarts when the specified level (0-based) changes.
+func (n NumberingLevel) SetRestartLevel(restartLevel int) {
+	if restartLevel < 0 {
+		// Continuous numbering - remove restart
+		n.x.LvlRestart = nil
+		return
+	}
+	if n.x.LvlRestart == nil {
+		n.x.LvlRestart = wml.NewCT_DecimalNumber()
+	}
+	n.x.LvlRestart.ValAttr = int64(restartLevel)
+}
+
+// RestartLevel returns the level at which numbering restarts, or -1 for continuous.
+func (n NumberingLevel) RestartLevel() int {
+	if n.x.LvlRestart == nil {
+		return -1
+	}
+	return int(n.x.LvlRestart.ValAttr)
+}

@@ -7,7 +7,9 @@
 
 package document
 
-import "gooxml/schema/soo/wml"
+import (
+	"gooxml/schema/soo/wml"
+)
 
 // NumberingDefinition defines a numbering definition for a list of pragraphs.
 type NumberingDefinition struct {
@@ -60,4 +62,53 @@ func (n NumberingDefinition) SetMultiLevelType(t wml.ST_MultiLevelType) {
 		n.x.MultiLevelType = wml.NewCT_MultiLevelType()
 		n.x.MultiLevelType.ValAttr = t
 	}
+}
+
+// SetName sets the name of the numbering definition.
+func (n NumberingDefinition) SetName(name string) {
+	if name == "" {
+		n.x.Name = nil
+	} else {
+		n.x.Name = wml.NewCT_String()
+		n.x.Name.ValAttr = name
+	}
+}
+
+// Name returns the name of the numbering definition, or empty string if not set.
+func (n NumberingDefinition) Name() string {
+	if n.x.Name == nil {
+		return ""
+	}
+	return n.x.Name.ValAttr
+}
+
+// Level returns the numbering level at the specified index, or creates it if it doesn't exist.
+func (n NumberingDefinition) Level(index int) NumberingLevel {
+	if index < 0 {
+		index = 0
+	}
+	// Ensure the level exists
+	for len(n.x.Lvl) <= index {
+		n.AddLevel()
+	}
+	return NumberingLevel{n.x.Lvl[index]}
+}
+
+// SetLevelStart sets the starting number for a specific level.
+func (n NumberingDefinition) SetLevelStart(level int, start int64) {
+	lvl := n.Level(level)
+	lvl.SetStart(start)
+}
+
+// SetLevelFormat sets the numbering format for a specific level.
+func (n NumberingDefinition) SetLevelFormat(level int, format wml.ST_NumberFormat) {
+	lvl := n.Level(level)
+	lvl.SetFormat(format)
+}
+
+// SetLevelText sets the numbering text pattern for a specific level.
+// Use %1, %2, etc. to represent the number at each level.
+func (n NumberingDefinition) SetLevelText(level int, text string) {
+	lvl := n.Level(level)
+	lvl.SetText(text)
 }
