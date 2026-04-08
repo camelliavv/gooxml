@@ -223,3 +223,18 @@ func (n Numbering) AddDefinition() NumberingDefinition {
 	n.x.Num = append(n.x.Num, nx)
 	return NumberingDefinition{an}
 }
+
+// CopyNumberingInstance creates a new numbering instance with the same style as the given abstractNumID,
+// but with independent numbering (restarts from 1).
+// Use this when you want to use the same list style but restart numbering.
+func (n Numbering) CopyNumberingInstance(abstractNumID int64) int64 {
+	nextID := n.nextNumberID()
+
+	num := wml.NewCT_Num()
+	num.NumIdAttr = nextID
+	num.AbstractNumId = wml.NewCT_DecimalNumber()
+	num.AbstractNumId.ValAttr = abstractNumID
+
+	n.x.Num = append(n.x.Num, num)
+	return num.NumIdAttr
+}
