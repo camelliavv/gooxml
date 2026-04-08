@@ -41,18 +41,20 @@ func (n Numbering) Clear() {
 }
 
 // InitializeDefault constructs a default numbering with bullet style.
-func (n Numbering) InitializeDefault() {
-	n.InitializeBullet()
+func (n Numbering) InitializeDefault() int64 {
+	return n.InitializeBullet()
 }
 
 // InitializeBullet constructs a default numbering with bullet style.
-func (n Numbering) InitializeBullet() {
+func (n Numbering) InitializeBullet() int64 {
+	nextID := n.nextNumberID()
+
 	abs := wml.NewCT_AbstractNum()
 	abs.MultiLevelType = wml.NewCT_MultiLevelType()
 	abs.MultiLevelType.ValAttr = wml.ST_MultiLevelTypeHybridMultilevel
 
 	n.x.AbstractNum = append(n.x.AbstractNum, abs)
-	abs.AbstractNumIdAttr = 1
+	abs.AbstractNumIdAttr = nextID
 	const indentStart = 720
 	const indentDelta = 720
 	const hangingIndent = 360
@@ -92,10 +94,11 @@ func (n Numbering) InitializeBullet() {
 		abs.Lvl = append(abs.Lvl, lvl)
 	}
 	num := wml.NewCT_Num()
-	num.NumIdAttr = 1
+	num.NumIdAttr = nextID
 	num.AbstractNumId = wml.NewCT_DecimalNumber()
-	num.AbstractNumId.ValAttr = 1
+	num.AbstractNumId.ValAttr = nextID
 	n.x.Num = append(n.x.Num, num)
+	return num.NumIdAttr
 }
 
 // InitializeDecimal constructs a numbering with decimal style (1, 2, 3, ...).
@@ -138,14 +141,27 @@ func (n Numbering) InitializeDecimalRightParenthesis() int64 {
 	return n.initializeNumbered(wml.ST_NumberFormatDecimal, "%1)")
 }
 
+// nextNumberID returns the next available numbering ID.
+func (n Numbering) nextNumberID() int64 {
+	nextID := int64(1)
+	for _, num := range n.x.Num {
+		if num.NumIdAttr >= nextID {
+			nextID = num.NumIdAttr + 1
+		}
+	}
+	return nextID
+}
+
 // common helper to create numbered list styles
 func (n Numbering) initializeNumbered(format wml.ST_NumberFormat, textPattern string) int64 {
+	nextID := n.nextNumberID()
+
 	abs := wml.NewCT_AbstractNum()
 	abs.MultiLevelType = wml.NewCT_MultiLevelType()
 	abs.MultiLevelType.ValAttr = wml.ST_MultiLevelTypeHybridMultilevel
 
 	n.x.AbstractNum = append(n.x.AbstractNum, abs)
-	abs.AbstractNumIdAttr = 1
+	abs.AbstractNumIdAttr = nextID
 	const indentStart = 720
 	const indentDelta = 720
 	const hangingIndent = 360
@@ -182,9 +198,9 @@ func (n Numbering) initializeNumbered(format wml.ST_NumberFormat, textPattern st
 		abs.Lvl = append(abs.Lvl, lvl)
 	}
 	num := wml.NewCT_Num()
-	num.NumIdAttr = 1
+	num.NumIdAttr = nextID
 	num.AbstractNumId = wml.NewCT_DecimalNumber()
-	num.AbstractNumId.ValAttr = 1
+	num.AbstractNumId.ValAttr = nextID
 	n.x.Num = append(n.x.Num, num)
 	return num.NumIdAttr
 }
