@@ -81,7 +81,7 @@ func (f Footnote) AddFootnoteRef(p Paragraph) Run {
 	contentRun := wml.NewEG_ContentRunContent()
 	contentRun.R = run
 	runContent.EG_ContentRunContent = append(runContent.EG_ContentRunContent, contentRun)
-	xP.EG_PContent = append(xP.EG_PContent, runContent)
+	xP.EG_PContent = append([]*wml.EG_PContent{runContent}, xP.EG_PContent...)
 
 	return Run{d: f.d, x: run}
 }
