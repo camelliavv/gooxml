@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7994dfac-9874-4959-a30a-4c012c6f33ae" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/document/document.go" beforeDir="false" afterPath="$PROJECT_DIR$/document/document.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/document/numbering.go" beforeDir="false" afterPath="$PROJECT_DIR$/document/numbering.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/document/numberingdefinition.go" beforeDir="false" afterPath="$PROJECT_DIR$/document/numberingdefinition.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/document/numberinglevel.go" beforeDir="false" afterPath="$PROJECT_DIR$/document/numberinglevel.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -99,42 +99,47 @@ func (n Numbering) InitializeBullet() {
 }
 
 // InitializeDecimal constructs a numbering with decimal style (1, 2, 3, ...).
-func (n Numbering) InitializeDecimal() {
-	n.initializeNumbered(wml.ST_NumberFormatDecimal, "%1.")
+func (n Numbering) InitializeDecimal() int64 {
+	return n.initializeNumbered(wml.ST_NumberFormatDecimal, "%1.")
 }
 
 // InitializeRoman constructs a numbering with upper roman style (I, II, III, ...).
-func (n Numbering) InitializeRoman() {
-	n.initializeNumbered(wml.ST_NumberFormatUpperRoman, "%1.")
+func (n Numbering) InitializeRoman() int64 {
+	return n.initializeNumbered(wml.ST_NumberFormatUpperRoman, "%1.")
 }
 
 // InitializeRomanLower constructs a numbering with lower roman style (i, ii, iii, ...).
-func (n Numbering) InitializeRomanLower() {
-	n.initializeNumbered(wml.ST_NumberFormatLowerRoman, "%1.")
+func (n Numbering) InitializeRomanLower() int64 {
+	return n.initializeNumbered(wml.ST_NumberFormatLowerRoman, "%1.")
 }
 
 // InitializeLetter constructs a numbering with upper letter style (A, B, C, ...).
-func (n Numbering) InitializeLetter() {
-	n.initializeNumbered(wml.ST_NumberFormatUpperLetter, "%1.")
+func (n Numbering) InitializeLetter() int64 {
+	return n.initializeNumbered(wml.ST_NumberFormatUpperLetter, "%1.")
 }
 
 // InitializeLetterLower constructs a numbering with lower letter style (a, b, c, ...).
-func (n Numbering) InitializeLetterLower() {
-	n.initializeNumbered(wml.ST_NumberFormatLowerLetter, "%1.")
+func (n Numbering) InitializeLetterLower() int64 {
+	return n.initializeNumbered(wml.ST_NumberFormatLowerLetter, "%1.")
 }
 
 // InitializeChinese constructs a numbering with chinese counting style (一, 二, 三, ...).
-func (n Numbering) InitializeChinese() {
-	n.initializeNumbered(wml.ST_NumberFormatChineseCounting, "%1、")
+func (n Numbering) InitializeChinese() int64 {
+	return n.initializeNumbered(wml.ST_NumberFormatChineseCounting, "%1、")
 }
 
 // InitializeDecimalParenthesis constructs a numbering with decimal enclosed parenthesis style ((1), (2), (3), ...).
-func (n Numbering) InitializeDecimalParenthesis() {
-	n.initializeNumbered(wml.ST_NumberFormatDecimalEnclosedParen, "%1)")
+func (n Numbering) InitializeDecimalParenthesis() int64 {
+	return n.initializeNumbered(wml.ST_NumberFormatDecimalEnclosedParen, "%1)")
+}
+
+// InitializeDecimalRightParenthesis constructs a numbering with decimal followed by right parenthesis style (1), 2), 3), ...).
+func (n Numbering) InitializeDecimalRightParenthesis() int64 {
+	return n.initializeNumbered(wml.ST_NumberFormatDecimal, "%1)")
 }
 
 // common helper to create numbered list styles
-func (n Numbering) initializeNumbered(format wml.ST_NumberFormat, textPattern string) {
+func (n Numbering) initializeNumbered(format wml.ST_NumberFormat, textPattern string) int64 {
 	abs := wml.NewCT_AbstractNum()
 	abs.MultiLevelType = wml.NewCT_MultiLevelType()
 	abs.MultiLevelType.ValAttr = wml.ST_MultiLevelTypeHybridMultilevel
@@ -181,6 +186,7 @@ func (n Numbering) initializeNumbered(format wml.ST_NumberFormat, textPattern st
 	num.AbstractNumId = wml.NewCT_DecimalNumber()
 	num.AbstractNumId.ValAttr = 1
 	n.x.Num = append(n.x.Num, num)
+	return num.NumIdAttr
 }
 
 // Definitions returns the defined numbering definitions.
