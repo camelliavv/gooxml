@@ -282,7 +282,10 @@ func (r Run) AddDrawingInline(img common.ImageRef) (InlineDrawing, error) {
 	return inline, nil
 }
 
-func (r Run) AddFootnoteReference(fnID int64) {
+// SetFootnoteReferenceID adds a footnote reference to the run, which creates a link
+// to the footnote with the given ID. The reference is displayed as a superscript
+// number in the document text.
+func (r Run) SetFootnoteReferenceID(fnID int64) {
 	xRun := r.X()
 	if xRun == nil {
 		return
@@ -293,4 +296,13 @@ func (r Run) AddFootnoteReference(fnID int64) {
 	ic.FootnoteReference.IdAttr = fnID
 
 	xRun.EG_RunInnerContent = append(xRun.EG_RunInnerContent, ic)
+}
+
+// SetFootnoteReference adds a footnote reference using a Footnote object.
+// This is a convenience method that accepts a *Footnote instead of an int64 ID.
+func (r Run) SetFootnoteReference(fn *Footnote) {
+	if fn == nil {
+		return
+	}
+	r.SetFootnoteReferenceID(fn.ID())
 }

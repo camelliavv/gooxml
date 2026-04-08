@@ -950,7 +950,10 @@ func (d *Document) AddNumbering() {
 	d.docRels.AddRelationship("numbering.xml", gooxml.NumberingType)
 }
 
-func (d *Document) AddFootnote(content string) int64 {
+// AddFootnote creates a new footnote with the given content and returns the Footnote object.
+// The content is added to a single paragraph. Use the returned Footnote object to customize
+// the footnote style, add more paragraphs, or add the footnote reference mark.
+func (d *Document) AddFootnote(content string) *Footnote {
 	if d.footNotes == nil {
 		d.footNotes = wml.NewFootnotes()
 	}
@@ -980,5 +983,5 @@ func (d *Document) AddFootnote(content string) int64 {
 	fn.EG_BlockLevelElts = append(fn.EG_BlockLevelElts, blockElt)
 	d.footNotes.Footnote = append(d.footNotes.Footnote, fn)
 
-	return fn.IdAttr
+	return &Footnote{d: d, x: fn}
 }

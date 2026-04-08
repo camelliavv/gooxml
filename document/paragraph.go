@@ -241,11 +241,14 @@ func (p Paragraph) SetNumberingDefinitionByID(abstractNumberID int64) {
 		p.x.PPr.NumPr = wml.NewCT_NumPr()
 	}
 	lvl := wml.NewCT_DecimalNumber()
-	lvl.ValAttr = int64(abstractNumberID)
+	lvl.ValAttr = abstractNumberID
 	p.x.PPr.NumPr.NumId = lvl
 }
 
-func (p Paragraph) AddFootnoteReference(fnID int64) {
+// SetFootnoteReferenceID adds a footnote reference to the paragraph, which creates a link
+// to the footnote with the given ID. The reference is displayed as a superscript
+// number in the document text.
+func (p Paragraph) SetFootnoteReferenceID(fnID int64) {
 	xPar := p.X()
 	if xPar == nil {
 		return
@@ -264,4 +267,13 @@ func (p Paragraph) AddFootnoteReference(fnID int64) {
 	runContent.EG_ContentRunContent = append(runContent.EG_ContentRunContent, contentRun)
 
 	xPar.EG_PContent = append(xPar.EG_PContent, runContent)
+}
+
+// SetFootnoteReference adds a footnote reference using a Footnote object.
+// This is a convenience method that accepts a *Footnote instead of an int64 ID.
+func (p Paragraph) SetFootnoteReference(fn *Footnote) {
+	if fn == nil {
+		return
+	}
+	p.SetFootnoteReferenceID(fn.ID())
 }
