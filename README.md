@@ -65,7 +65,7 @@ We recommend using versioned installation:
 go get github.com/camelliavv/gooxml@latest
 
 # Install specific version
-go get github.com/camelliavv/gooxml@v1.0.0
+go get github.com/camelliavv/gooxml@v1.1.0
 ```
 
 ## Document Examples ##

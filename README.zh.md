@@ -57,7 +57,7 @@ go get github.com/camelliavv/gooxml
 go get github.com/camelliavv/gooxml@latest
 
 # 安装特定版本
-go get github.com/camelliavv/gooxml@v1.0.0
+go get github.com/camelliavv/gooxml@v1.1.0
 ```
 
 ## 文档示例 ##
