@@ -205,7 +205,6 @@ func (n Numbering) initializeNumbered(format wml.ST_NumberFormat, textPattern st
 		lvl.Suff.ValAttr = wml.ST_LevelSuffixNothing
 
 		lvl.LvlText = wml.NewCT_LevelText()
-		// Replace %1 with the level number placeholder
 		placeholder := fmt.Sprintf("%%%d", i+1)
 		text := strings.ReplaceAll(textPattern, "%1", placeholder)
 		lvl.LvlText.ValAttr = gooxml.String(text)
