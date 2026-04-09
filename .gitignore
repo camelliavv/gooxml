@@ -8,6 +8,7 @@ coverage*
 **/.DS_Store
 **/main
 CLAUDE.md
+.idea
 
 # Test binary, build with `go test -c`
 *.test
