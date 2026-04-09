@@ -491,7 +491,7 @@ func Read(r io.ReaderAt, size int64) (*Document, error) {
 	// numbering is not required
 	doc.Numbering.x = nil
 
-	td, err := ioutil.TempDir("", "github.com/camelliavv/gooxml-docx")
+	td, err := ioutil.TempDir("", "gooxml-docx")
 	if err != nil {
 		return nil, err
 	}
