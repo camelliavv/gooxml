@@ -26,7 +26,7 @@ type AppProperties struct {
 func NewAppProperties() AppProperties {
 	p := AppProperties{x: extended_properties.NewProperties()}
 	p.SetCompany("Baliance LLC")
-	p.SetApplication("baliance.com/gooxml")
+	p.SetApplication("github.com/camelliavv/gooxml")
 	p.SetDocSecurity(0)
 	p.SetLinksUpToDate(false)
 	// trim the 'v'

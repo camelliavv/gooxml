@@ -18,7 +18,7 @@ func TestKnownHashes(t *testing.T) {
 		Inp string
 		Exp string
 	}{
-		{"github.com/camelliavv/gooxml", "DD67"},
+		{"github.com/camelliavv/gooxml", "FF99"},
 		{"", "0000"},
 	}
 	for _, tc := range td {
