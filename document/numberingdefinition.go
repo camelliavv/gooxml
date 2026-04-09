@@ -94,12 +94,6 @@ func (n NumberingDefinition) Level(index int) NumberingLevel {
 	return NumberingLevel{n.x.Lvl[index]}
 }
 
-// SetLevelStart sets the starting number for a specific level.
-func (n NumberingDefinition) SetLevelStart(level int, start int64) {
-	lvl := n.Level(level)
-	lvl.SetStart(start)
-}
-
 // SetLevelFormat sets the numbering format for a specific level.
 func (n NumberingDefinition) SetLevelFormat(level int, format wml.ST_NumberFormat) {
 	lvl := n.Level(level)
@@ -111,4 +105,17 @@ func (n NumberingDefinition) SetLevelFormat(level int, format wml.ST_NumberForma
 func (n NumberingDefinition) SetLevelText(level int, text string) {
 	lvl := n.Level(level)
 	lvl.SetText(text)
+}
+
+// SetLevelStart sets the starting number for a specific level.
+func (n NumberingDefinition) SetLevelStart(level int, start int64) {
+	lvl := n.Level(level)
+	lvl.SetStart(start)
+}
+
+// SetStart sets the starting number for all levels in this numbering definition.
+func (n NumberingDefinition) SetStart(start int64) {
+	for _, lvl := range n.Levels() {
+		lvl.SetStart(start)
+	}
 }

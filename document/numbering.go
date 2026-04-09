@@ -141,6 +141,36 @@ func (n Numbering) InitializeDecimalRightParenthesis() int64 {
 	return n.initializeNumbered(wml.ST_NumberFormatDecimal, "%1)")
 }
 
+// InitializeDecimalEnclosedCircle constructs a numbering with decimal enclosed circle style (①, ②, ③, ...).
+func (n Numbering) InitializeDecimalEnclosedCircle() int64 {
+	return n.initializeNumbered(wml.ST_NumberFormatDecimalEnclosedCircle, "%1.")
+}
+
+// InitializeChineseThousand constructs a numbering with chinese counting thousand style (壹、贰、叁, ...).
+func (n Numbering) InitializeChineseThousand() int64 {
+	return n.initializeNumbered(wml.ST_NumberFormatChineseCountingThousand, "%1、")
+}
+
+// InitializeIdeographZodiac constructs a numbering with ideograph zodiac style (甲、乙、丙, ...).
+func (n Numbering) InitializeIdeographZodiac() int64 {
+	return n.initializeNumbered(wml.ST_NumberFormatIdeographZodiac, "%1、")
+}
+
+// InitializeIdeographTraditional constructs a numbering with ideograph traditional style (子、丑、寅, ...).
+func (n Numbering) InitializeIdeographTraditional() int64 {
+	return n.initializeNumbered(wml.ST_NumberFormatIdeographTraditional, "%1、")
+}
+
+// InitializeKoreanCounting constructs a numbering with korean counting style (가, 나, 다, ...).
+func (n Numbering) InitializeKoreanCounting() int64 {
+	return n.initializeNumbered(wml.ST_NumberFormatKoreanCounting, "%1.")
+}
+
+// InitializeJapaneseCounting constructs a numbering with japanese counting style (一, 二, 三, ...).
+func (n Numbering) InitializeJapaneseCounting() int64 {
+	return n.initializeNumbered(wml.ST_NumberFormatJapaneseCounting, "%1.")
+}
+
 // nextNumberID returns the next available numbering ID.
 func (n Numbering) nextNumberID() int64 {
 	nextID := int64(1)
@@ -224,6 +254,34 @@ func (n Numbering) AddDefinition() NumberingDefinition {
 	return NumberingDefinition{an}
 }
 
+// RemoveDefinition removes a numbering definition by its abstract number ID.
+// Returns true if the definition was found and removed, false otherwise.
+func (n Numbering) RemoveDefinition(abstractNumID int64) bool {
+	removed := false
+
+	// Remove from AbstractNum
+	newAbstractNum := make([]*wml.CT_AbstractNum, 0, len(n.x.AbstractNum))
+	for _, abs := range n.x.AbstractNum {
+		if abs.AbstractNumIdAttr != abstractNumID {
+			newAbstractNum = append(newAbstractNum, abs)
+		} else {
+			removed = true
+		}
+	}
+	n.x.AbstractNum = newAbstractNum
+
+	// Remove associated Num instances
+	newNum := make([]*wml.CT_Num, 0, len(n.x.Num))
+	for _, num := range n.x.Num {
+		if num.AbstractNumId == nil || num.AbstractNumId.ValAttr != abstractNumID {
+			newNum = append(newNum, num)
+		}
+	}
+	n.x.Num = newNum
+
+	return removed
+}
+
 // CopyNumberingInstance creates a new numbering instance with the same style as the given abstractNumID,
 // but with independent numbering (restarts from 1).
 // Use this when you want to use the same list style but restart numbering.
@@ -234,6 +292,15 @@ func (n Numbering) CopyNumberingInstance(abstractNumID int64) int64 {
 	num.NumIdAttr = nextID
 	num.AbstractNumId = wml.NewCT_DecimalNumber()
 	num.AbstractNumId.ValAttr = abstractNumID
+
+	// Add level overrides to restart numbering from 1 for each level (0-8, standard 9 levels)
+	for i := 0; i < 9; i++ {
+		lvlOverride := wml.NewCT_NumLvl()
+		lvlOverride.IlvlAttr = int64(i)
+		lvlOverride.StartOverride = wml.NewCT_DecimalNumber()
+		lvlOverride.StartOverride.ValAttr = 1
+		num.LvlOverride = append(num.LvlOverride, lvlOverride)
+	}
 
 	n.x.Num = append(n.x.Num, num)
 	return num.NumIdAttr
