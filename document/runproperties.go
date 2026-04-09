@@ -45,6 +45,30 @@ func (r RunProperties) SetFontFamily(family string) {
 	r.x.RFonts.EastAsiaAttr = gooxml.String(family)
 }
 
+// SetAsciiFont sets the Ascii font family for a run.
+func (r RunProperties) SetAsciiFont(family string) {
+	if r.x.RFonts == nil {
+		r.x.RFonts = wml.NewCT_Fonts()
+	}
+	r.x.RFonts.AsciiAttr = gooxml.String(family)
+}
+
+// SetHAnsiFont sets the HAnsi (High ANSI) font family for a run.
+func (r RunProperties) SetHAnsiFont(family string) {
+	if r.x.RFonts == nil {
+		r.x.RFonts = wml.NewCT_Fonts()
+	}
+	r.x.RFonts.HAnsiAttr = gooxml.String(family)
+}
+
+// SetEastAsiaFont sets the East Asian font family for a run.
+func (r RunProperties) SetEastAsiaFont(family string) {
+	if r.x.RFonts == nil {
+		r.x.RFonts = wml.NewCT_Fonts()
+	}
+	r.x.RFonts.EastAsiaAttr = gooxml.String(family)
+}
+
 // SetSize sets the font size for a run.
 func (r RunProperties) SetSize(size measurement.Distance) {
 	r.x.Sz = wml.NewCT_HpsMeasure()
