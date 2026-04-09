@@ -52,8 +52,21 @@ DOCX/XLSX/PPTX.
 
 ## Installation ##
 
-    go get github.com/camelliavv/gooxml/
-    go build -i github.com/camelliavv/gooxml/...
+```bash
+go get github.com/camelliavv/gooxml
+```
+
+## Version Notes ##
+
+We recommend using versioned installation:
+
+```bash
+# Install latest version
+go get github.com/camelliavv/gooxml@latest
+
+# Install specific version
+go get github.com/camelliavv/gooxml@v1.1.0
+```
 
 ## Document Examples ##
 

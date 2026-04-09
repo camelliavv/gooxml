@@ -44,8 +44,21 @@
 
 ## 安装 ##
 
-    go get github.com/camelliavv/gooxml/
-    go build -i github.com/camelliavv/gooxml/...
+```bash
+go get github.com/camelliavv/gooxml
+```
+
+## 版本说明 ##
+
+我们建议使用版本化安装:
+
+```bash
+# 安装最新版本
+go get github.com/camelliavv/gooxml@latest
+
+# 安装特定版本
+go get github.com/camelliavv/gooxml@v1.0.0
+```
 
 ## 文档示例 ##
 
