@@ -8,8 +8,8 @@
 package chart
 
 import (
-	"gooxml"
-	crt "gooxml/schema/soo/dml/chart"
+	"github.com/camelliavv/gooxml"
+	crt "github.com/camelliavv/gooxml/schema/soo/dml/chart"
 )
 
 // StockChart is a 2D Stock chart.

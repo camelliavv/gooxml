@@ -10,9 +10,9 @@ package document
 import (
 	"testing"
 
-	"gooxml"
-	"gooxml/schema/soo/ofc/sharedTypes"
-	"gooxml/schema/soo/wml"
+	"github.com/camelliavv/gooxml"
+	"github.com/camelliavv/gooxml/schema/soo/ofc/sharedTypes"
+	"github.com/camelliavv/gooxml/schema/soo/wml"
 )
 
 func TestRunClear(t *testing.T) {

@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"testing"
 
-	"gooxml/schema/soo/dml/chartDrawing"
+	"github.com/camelliavv/gooxml/schema/soo/dml/chartDrawing"
 )
 
 func TestEG_ObjectChoicesConstructor(t *testing.T) {

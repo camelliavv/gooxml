@@ -12,7 +12,7 @@ package sml
 import (
 	"encoding/xml"
 
-	"gooxml"
+	"github.com/camelliavv/gooxml"
 )
 
 type CT_RElt struct {

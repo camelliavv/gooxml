@@ -10,7 +10,7 @@ package presentation_test
 import (
 	"testing"
 
-	"gooxml/schema/soo/dml"
+	"github.com/camelliavv/gooxml/schema/soo/dml"
 )
 
 // Issue #207

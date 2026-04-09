@@ -4,11 +4,11 @@ package main
 import (
 	"log"
 
-	"gooxml/measurement"
+	"github.com/camelliavv/gooxml/measurement"
 
-	"gooxml/common"
+	"github.com/camelliavv/gooxml/common"
 
-	"gooxml/presentation"
+	"github.com/camelliavv/gooxml/presentation"
 )
 
 func main() {

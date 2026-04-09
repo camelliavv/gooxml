@@ -13,8 +13,8 @@ import (
 	"encoding/xml"
 	"strconv"
 
-	"gooxml"
-	"gooxml/schema/soo/dml"
+	"github.com/camelliavv/gooxml"
+	"github.com/camelliavv/gooxml/schema/soo/dml"
 )
 
 type WdWsp struct {

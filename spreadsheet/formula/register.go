@@ -11,7 +11,7 @@ import (
 	"sort"
 	"sync"
 
-	"gooxml"
+	"github.com/camelliavv/gooxml"
 )
 
 // SupportedFunctions returns a list of supported functions.

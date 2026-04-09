@@ -11,7 +11,7 @@ import (
 	"fmt"
 	"strings"
 
-	"gooxml/spreadsheet/reference"
+	"github.com/camelliavv/gooxml/spreadsheet/reference"
 )
 
 func init() {

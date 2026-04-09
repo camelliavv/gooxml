@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"fmt"
 
-	"gooxml/schema/soo/dml"
+	"github.com/camelliavv/gooxml/schema/soo/dml"
 )
 
 type CT_TLByRgbColorTransform struct {

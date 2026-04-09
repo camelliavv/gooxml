@@ -8,9 +8,9 @@
 package chart
 
 import (
-	"gooxml/drawing"
-	"gooxml/schema/soo/dml"
-	crt "gooxml/schema/soo/dml/chart"
+	"github.com/camelliavv/gooxml/drawing"
+	"github.com/camelliavv/gooxml/schema/soo/dml"
+	crt "github.com/camelliavv/gooxml/schema/soo/dml/chart"
 )
 
 // AreaChartSeries is a series to be used on an area chart.

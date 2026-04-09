@@ -12,7 +12,7 @@ package chart
 import (
 	"encoding/xml"
 
-	"gooxml"
+	"github.com/camelliavv/gooxml"
 )
 
 type EG_AxSharedChoice struct {

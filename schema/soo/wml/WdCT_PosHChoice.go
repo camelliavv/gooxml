@@ -12,7 +12,7 @@ package wml
 import (
 	"encoding/xml"
 
-	"gooxml"
+	"github.com/camelliavv/gooxml"
 )
 
 type WdCT_PosHChoice struct {

@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"testing"
 
-	"gooxml/schema/urn/schemas_microsoft_com/office/powerpoint"
+	"github.com/camelliavv/gooxml/schema/urn/schemas_microsoft_com/office/powerpoint"
 )
 
 func TestCT_RelConstructor(t *testing.T) {

@@ -11,9 +11,9 @@ import (
 	"fmt"
 	"strings"
 
-	"gooxml"
-	"gooxml/schema/soo/ofc/sharedTypes"
-	"gooxml/schema/soo/wml"
+	"github.com/camelliavv/gooxml"
+	"github.com/camelliavv/gooxml/schema/soo/ofc/sharedTypes"
+	"github.com/camelliavv/gooxml/schema/soo/wml"
 )
 
 // Numbering is the document wide numbering styles contained in numbering.xml.

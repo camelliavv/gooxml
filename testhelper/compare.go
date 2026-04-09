@@ -21,7 +21,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"gooxml"
+	"github.com/camelliavv/gooxml"
 )
 
 var update = flag.Bool("test.update", false, "update golden file")

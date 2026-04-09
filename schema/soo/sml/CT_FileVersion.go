@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"fmt"
 
-	"gooxml/schema/soo/ofc/sharedTypes"
+	"github.com/camelliavv/gooxml/schema/soo/ofc/sharedTypes"
 )
 
 type CT_FileVersion struct {

@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"testing"
 
-	"gooxml/schema/soo/wml"
+	"github.com/camelliavv/gooxml/schema/soo/wml"
 )
 
 func TestWdCT_WordprocessingShapeConstructor(t *testing.T) {

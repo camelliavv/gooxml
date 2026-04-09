@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"testing"
 
-	"gooxml/schema/soo/pml"
+	"github.com/camelliavv/gooxml/schema/soo/pml"
 )
 
 func TestCT_TLTemplateListConstructor(t *testing.T) {

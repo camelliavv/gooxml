@@ -8,7 +8,7 @@ import (
 
 	ole "github.com/go-ole/go-ole"
 	"github.com/go-ole/go-ole/oleutil"
-	"gooxml/document"
+	"github.com/camelliavv/gooxml/document"
 )
 
 // NOTE: This example can only run on Windows and requires that Word be installed.

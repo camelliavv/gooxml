@@ -8,7 +8,7 @@
 package drawing
 
 import (
-	"gooxml/schema/soo/dml"
+	"github.com/camelliavv/gooxml/schema/soo/dml"
 )
 
 // MakeParagraph constructs a new paragraph wrapper.

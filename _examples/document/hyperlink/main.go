@@ -1,9 +1,9 @@
 package main
 
 import (
-	"gooxml/color"
-	"gooxml/document"
-	"gooxml/schema/soo/wml"
+	"github.com/camelliavv/gooxml/color"
+	"github.com/camelliavv/gooxml/document"
+	"github.com/camelliavv/gooxml/schema/soo/wml"
 )
 
 func main() {

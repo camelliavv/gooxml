@@ -7,7 +7,7 @@
 
 package spreadsheet
 
-import "gooxml/schema/soo/sml"
+import "github.com/camelliavv/gooxml/schema/soo/sml"
 
 // StandardFormat is a standard ECMA 376 number format.
 //

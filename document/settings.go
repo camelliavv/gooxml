@@ -8,8 +8,8 @@
 package document
 
 import (
-	"gooxml"
-	"gooxml/schema/soo/wml"
+	"github.com/camelliavv/gooxml"
+	"github.com/camelliavv/gooxml/schema/soo/wml"
 )
 
 // Settings controls the document settings.

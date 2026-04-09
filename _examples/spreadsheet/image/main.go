@@ -5,9 +5,9 @@ import (
 	"log"
 	"math"
 
-	"gooxml/common"
-	"gooxml/measurement"
-	"gooxml/spreadsheet"
+	"github.com/camelliavv/gooxml/common"
+	"github.com/camelliavv/gooxml/measurement"
+	"github.com/camelliavv/gooxml/spreadsheet"
 )
 
 func main() {

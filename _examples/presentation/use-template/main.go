@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"log"
 
-	"gooxml/color"
-	"gooxml/schema/soo/pml"
+	"github.com/camelliavv/gooxml/color"
+	"github.com/camelliavv/gooxml/schema/soo/pml"
 
-	"gooxml/presentation"
+	"github.com/camelliavv/gooxml/presentation"
 )
 
 func main() {

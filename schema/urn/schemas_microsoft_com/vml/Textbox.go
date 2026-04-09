@@ -12,8 +12,8 @@ package vml
 import (
 	"encoding/xml"
 
-	"gooxml"
-	"gooxml/schema/soo/wml"
+	"github.com/camelliavv/gooxml"
+	"github.com/camelliavv/gooxml/schema/soo/wml"
 )
 
 type Textbox struct {

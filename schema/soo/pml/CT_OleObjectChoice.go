@@ -12,7 +12,7 @@ package pml
 import (
 	"encoding/xml"
 
-	"gooxml"
+	"github.com/camelliavv/gooxml"
 )
 
 type CT_OleObjectChoice struct {

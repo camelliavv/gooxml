@@ -21,14 +21,14 @@ import (
 	"path"
 	"strings"
 
-	"gooxml"
-	"gooxml/common"
-	"gooxml/measurement"
-	"gooxml/schema/soo/dml"
-	"gooxml/schema/soo/ofc/sharedTypes"
-	"gooxml/schema/soo/pkg/relationships"
-	"gooxml/schema/soo/pml"
-	"gooxml/zippkg"
+	"github.com/camelliavv/gooxml"
+	"github.com/camelliavv/gooxml/common"
+	"github.com/camelliavv/gooxml/measurement"
+	"github.com/camelliavv/gooxml/schema/soo/dml"
+	"github.com/camelliavv/gooxml/schema/soo/ofc/sharedTypes"
+	"github.com/camelliavv/gooxml/schema/soo/pkg/relationships"
+	"github.com/camelliavv/gooxml/schema/soo/pml"
+	"github.com/camelliavv/gooxml/zippkg"
 )
 
 // Presentation is the a presentation base document.
@@ -118,7 +118,7 @@ func New() *Presentation {
 
 	thm := dml.NewTheme()
 
-	thm.NameAttr = gooxml.String("gooxml Theme")
+	thm.NameAttr = gooxml.String("github.com/camelliavv/gooxml Theme")
 	thm.ThemeElements.ClrScheme.NameAttr = "Office"
 	thm.ThemeElements.ClrScheme.Dk1.SysClr = dml.NewCT_SystemColor()
 	thm.ThemeElements.ClrScheme.Dk1.SysClr.LastClrAttr = gooxml.String("000000")

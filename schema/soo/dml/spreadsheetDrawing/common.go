@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"fmt"
 
-	"gooxml"
+	"github.com/camelliavv/gooxml"
 )
 
 func b2i(b bool) uint8 {

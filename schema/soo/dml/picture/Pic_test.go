@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"testing"
 
-	"gooxml/schema/soo/dml/picture"
+	"github.com/camelliavv/gooxml/schema/soo/dml/picture"
 )
 
 func TestPicConstructor(t *testing.T) {

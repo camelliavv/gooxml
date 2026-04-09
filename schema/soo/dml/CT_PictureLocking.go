@@ -14,7 +14,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"gooxml"
+	"github.com/camelliavv/gooxml"
 )
 
 type CT_PictureLocking struct {

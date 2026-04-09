@@ -10,12 +10,12 @@ package chart
 import (
 	"math/rand"
 
-	"gooxml"
-	"gooxml/color"
-	"gooxml/drawing"
+	"github.com/camelliavv/gooxml"
+	"github.com/camelliavv/gooxml/color"
+	"github.com/camelliavv/gooxml/drawing"
 
-	"gooxml/schema/soo/dml"
-	crt "gooxml/schema/soo/dml/chart"
+	"github.com/camelliavv/gooxml/schema/soo/dml"
+	crt "github.com/camelliavv/gooxml/schema/soo/dml/chart"
 )
 
 // Chart is a generic chart.

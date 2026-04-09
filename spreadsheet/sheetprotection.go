@@ -8,8 +8,8 @@
 package spreadsheet
 
 import (
-	"gooxml"
-	"gooxml/schema/soo/sml"
+	"github.com/camelliavv/gooxml"
+	"github.com/camelliavv/gooxml/schema/soo/sml"
 )
 
 type SheetProtection struct {

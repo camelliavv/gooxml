@@ -12,10 +12,10 @@ package vml
 import (
 	"encoding/xml"
 
-	"gooxml"
-	"gooxml/schema/urn/schemas_microsoft_com/office/excel"
-	"gooxml/schema/urn/schemas_microsoft_com/office/powerpoint"
-	"gooxml/schema/urn/schemas_microsoft_com/office/word"
+	"github.com/camelliavv/gooxml"
+	"github.com/camelliavv/gooxml/schema/urn/schemas_microsoft_com/office/excel"
+	"github.com/camelliavv/gooxml/schema/urn/schemas_microsoft_com/office/powerpoint"
+	"github.com/camelliavv/gooxml/schema/urn/schemas_microsoft_com/office/word"
 )
 
 type EG_ShapeElements struct {

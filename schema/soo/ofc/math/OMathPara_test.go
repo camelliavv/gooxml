@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"testing"
 
-	"gooxml/schema/soo/ofc/math"
+	"github.com/camelliavv/gooxml/schema/soo/ofc/math"
 )
 
 func TestOMathParaConstructor(t *testing.T) {

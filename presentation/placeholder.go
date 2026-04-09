@@ -10,10 +10,10 @@ package presentation
 import (
 	"errors"
 
-	"gooxml"
-	"gooxml/drawing"
-	"gooxml/schema/soo/dml"
-	"gooxml/schema/soo/pml"
+	"github.com/camelliavv/gooxml"
+	"github.com/camelliavv/gooxml/drawing"
+	"github.com/camelliavv/gooxml/schema/soo/dml"
+	"github.com/camelliavv/gooxml/schema/soo/pml"
 )
 
 // PlaceHolder is a place holder from a slide.

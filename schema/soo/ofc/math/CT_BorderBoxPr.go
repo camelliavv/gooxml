@@ -12,7 +12,7 @@ package math
 import (
 	"encoding/xml"
 
-	"gooxml"
+	"github.com/camelliavv/gooxml"
 )
 
 type CT_BorderBoxPr struct {

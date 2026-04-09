@@ -10,9 +10,9 @@ package spreadsheet
 import (
 	"runtime"
 
-	"gooxml"
-	"gooxml/common"
-	"gooxml/schema/soo/sml"
+	"github.com/camelliavv/gooxml"
+	"github.com/camelliavv/gooxml/common"
+	"github.com/camelliavv/gooxml/schema/soo/sml"
 )
 
 // New constructs a new workbook.

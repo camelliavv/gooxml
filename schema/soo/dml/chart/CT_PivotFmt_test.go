@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"testing"
 
-	"gooxml/schema/soo/dml/chart"
+	"github.com/camelliavv/gooxml/schema/soo/dml/chart"
 )
 
 func TestCT_PivotFmtConstructor(t *testing.T) {

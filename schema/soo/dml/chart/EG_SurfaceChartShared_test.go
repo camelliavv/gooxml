@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"testing"
 
-	"gooxml/schema/soo/dml/chart"
+	"github.com/camelliavv/gooxml/schema/soo/dml/chart"
 )
 
 func TestEG_SurfaceChartSharedConstructor(t *testing.T) {

@@ -19,14 +19,14 @@ import (
 	"path/filepath"
 	"strings"
 
-	"gooxml"
-	"gooxml/common"
-	"gooxml/zippkg"
+	"github.com/camelliavv/gooxml"
+	"github.com/camelliavv/gooxml/common"
+	"github.com/camelliavv/gooxml/zippkg"
 
-	"gooxml/schema/soo/dml"
-	st "gooxml/schema/soo/ofc/sharedTypes"
-	"gooxml/schema/soo/pkg/relationships"
-	"gooxml/schema/soo/wml"
+	"github.com/camelliavv/gooxml/schema/soo/dml"
+	st "github.com/camelliavv/gooxml/schema/soo/ofc/sharedTypes"
+	"github.com/camelliavv/gooxml/schema/soo/pkg/relationships"
+	"github.com/camelliavv/gooxml/schema/soo/wml"
 )
 
 // Document is a text document that can be written out in the OOXML .docx
@@ -491,7 +491,7 @@ func Read(r io.ReaderAt, size int64) (*Document, error) {
 	// numbering is not required
 	doc.Numbering.x = nil
 
-	td, err := ioutil.TempDir("", "gooxml-docx")
+	td, err := ioutil.TempDir("", "github.com/camelliavv/gooxml-docx")
 	if err != nil {
 		return nil, err
 	}

@@ -4,9 +4,9 @@ package main
 import (
 	"log"
 
-	"gooxml/document"
-	"gooxml/measurement"
-	"gooxml/schema/soo/wml"
+	"github.com/camelliavv/gooxml/document"
+	"github.com/camelliavv/gooxml/measurement"
+	"github.com/camelliavv/gooxml/schema/soo/wml"
 )
 
 func main() {

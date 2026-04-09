@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"testing"
 
-	"gooxml/schema/soo/sml"
+	"github.com/camelliavv/gooxml/schema/soo/sml"
 )
 
 func TestMetadataConstructor(t *testing.T) {

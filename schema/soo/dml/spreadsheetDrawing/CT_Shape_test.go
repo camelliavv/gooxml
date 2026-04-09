@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"testing"
 
-	"gooxml/schema/soo/dml/spreadsheetDrawing"
+	"github.com/camelliavv/gooxml/schema/soo/dml/spreadsheetDrawing"
 )
 
 func TestCT_ShapeConstructor(t *testing.T) {

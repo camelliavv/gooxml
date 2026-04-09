@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"fmt"
 
-	"gooxml"
+	"github.com/camelliavv/gooxml"
 )
 
 type CT_PresetTextShape struct {

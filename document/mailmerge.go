@@ -7,7 +7,7 @@ import (
 	"strings"
 	"unicode"
 
-	"gooxml/schema/soo/wml"
+	"github.com/camelliavv/gooxml/schema/soo/wml"
 )
 
 type mergeFieldInfo struct {

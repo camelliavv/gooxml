@@ -11,8 +11,8 @@ import (
 	"encoding/xml"
 	"time"
 
-	"gooxml"
-	"gooxml/schema/soo/pkg/metadata/core_properties"
+	"github.com/camelliavv/gooxml"
+	"github.com/camelliavv/gooxml/schema/soo/pkg/metadata/core_properties"
 )
 
 // CoreProperties contains document specific properties.

@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"testing"
 
-	"gooxml/schema/soo/pml"
+	"github.com/camelliavv/gooxml/schema/soo/pml"
 )
 
 func TestViewPrConstructor(t *testing.T) {

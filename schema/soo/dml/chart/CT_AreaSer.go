@@ -13,8 +13,8 @@ import (
 	"encoding/xml"
 	"fmt"
 
-	"gooxml"
-	"gooxml/schema/soo/dml"
+	"github.com/camelliavv/gooxml"
+	"github.com/camelliavv/gooxml/schema/soo/dml"
 )
 
 type CT_AreaSer struct {

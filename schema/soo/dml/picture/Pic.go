@@ -12,7 +12,7 @@ package picture
 import (
 	"encoding/xml"
 
-	"gooxml"
+	"github.com/camelliavv/gooxml"
 )
 
 type Pic struct {

@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"fmt"
 
-	"gooxml"
+	"github.com/camelliavv/gooxml"
 )
 
 type ST_TargetMode byte

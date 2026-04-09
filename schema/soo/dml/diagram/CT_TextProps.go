@@ -12,8 +12,8 @@ package diagram
 import (
 	"encoding/xml"
 
-	"gooxml"
-	"gooxml/schema/soo/dml"
+	"github.com/camelliavv/gooxml"
+	"github.com/camelliavv/gooxml/schema/soo/dml"
 )
 
 type CT_TextProps struct {

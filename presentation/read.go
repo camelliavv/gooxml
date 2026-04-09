@@ -13,15 +13,15 @@ import (
 	"io"
 	"io/ioutil"
 
-	"gooxml"
-	"gooxml/zippkg"
+	"github.com/camelliavv/gooxml"
+	"github.com/camelliavv/gooxml/zippkg"
 )
 
 // Read reads a document from an io.Reader.
 func Read(r io.ReaderAt, size int64) (*Presentation, error) {
 	doc := newEmpty()
 
-	td, err := ioutil.TempDir("", "gooxml-pptx")
+	td, err := ioutil.TempDir("", "github.com/camelliavv/gooxml-pptx")
 	if err != nil {
 		return nil, err
 	}

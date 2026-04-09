@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"log"
 
-	"gooxml/chart"
-	"gooxml/spreadsheet"
+	"github.com/camelliavv/gooxml/chart"
+	"github.com/camelliavv/gooxml/spreadsheet"
 )
 
 func main() {

@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"testing"
 
-	"gooxml/schema/urn/schemas_microsoft_com/office/word"
+	"github.com/camelliavv/gooxml/schema/urn/schemas_microsoft_com/office/word"
 )
 
 func TestBorderrightConstructor(t *testing.T) {

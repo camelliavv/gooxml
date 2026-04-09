@@ -8,11 +8,11 @@
 package document
 
 import (
-	"gooxml"
-	"gooxml/color"
-	"gooxml/measurement"
-	"gooxml/schema/soo/ofc/sharedTypes"
-	"gooxml/schema/soo/wml"
+	"github.com/camelliavv/gooxml"
+	"github.com/camelliavv/gooxml/color"
+	"github.com/camelliavv/gooxml/measurement"
+	"github.com/camelliavv/gooxml/schema/soo/ofc/sharedTypes"
+	"github.com/camelliavv/gooxml/schema/soo/wml"
 )
 
 // RunProperties controls run styling properties

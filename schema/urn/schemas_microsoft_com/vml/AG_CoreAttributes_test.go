@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"testing"
 
-	"gooxml/schema/urn/schemas_microsoft_com/vml"
+	"github.com/camelliavv/gooxml/schema/urn/schemas_microsoft_com/vml"
 )
 
 func TestAG_CoreAttributesConstructor(t *testing.T) {

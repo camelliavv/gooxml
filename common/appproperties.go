@@ -12,8 +12,8 @@ import (
 	"strconv"
 	"strings"
 
-	"gooxml"
-	"gooxml/schema/soo/ofc/extended_properties"
+	"github.com/camelliavv/gooxml"
+	"github.com/camelliavv/gooxml/schema/soo/ofc/extended_properties"
 )
 
 // AppProperties contains properties specific to the document and the
@@ -26,7 +26,7 @@ type AppProperties struct {
 func NewAppProperties() AppProperties {
 	p := AppProperties{x: extended_properties.NewProperties()}
 	p.SetCompany("Baliance LLC")
-	p.SetApplication("gooxml")
+	p.SetApplication("github.com/camelliavv/gooxml")
 	p.SetDocSecurity(0)
 	p.SetLinksUpToDate(false)
 	// trim the 'v'

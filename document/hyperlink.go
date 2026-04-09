@@ -8,9 +8,9 @@
 package document
 
 import (
-	"gooxml"
-	"gooxml/common"
-	"gooxml/schema/soo/wml"
+	"github.com/camelliavv/gooxml"
+	"github.com/camelliavv/gooxml/common"
+	"github.com/camelliavv/gooxml/schema/soo/wml"
 )
 
 // HyperLink is a link within a document.

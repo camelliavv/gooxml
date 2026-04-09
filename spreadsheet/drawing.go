@@ -10,16 +10,16 @@ package spreadsheet
 import (
 	"fmt"
 
-	"gooxml"
-	"gooxml/chart"
-	"gooxml/color"
-	"gooxml/common"
-	"gooxml/measurement"
+	"github.com/camelliavv/gooxml"
+	"github.com/camelliavv/gooxml/chart"
+	"github.com/camelliavv/gooxml/color"
+	"github.com/camelliavv/gooxml/common"
+	"github.com/camelliavv/gooxml/measurement"
 
-	"gooxml/schema/soo/dml"
-	c "gooxml/schema/soo/dml/chart"
-	crt "gooxml/schema/soo/dml/chart"
-	sd "gooxml/schema/soo/dml/spreadsheetDrawing"
+	"github.com/camelliavv/gooxml/schema/soo/dml"
+	c "github.com/camelliavv/gooxml/schema/soo/dml/chart"
+	crt "github.com/camelliavv/gooxml/schema/soo/dml/chart"
+	sd "github.com/camelliavv/gooxml/schema/soo/dml/spreadsheetDrawing"
 )
 
 // Drawing is a drawing overlay on a sheet.  Only a single drawing is allowed

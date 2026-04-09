@@ -13,13 +13,13 @@ import (
 	"sort"
 	"strings"
 
-	"gooxml/spreadsheet/formula"
-	"gooxml/spreadsheet/reference"
+	"github.com/camelliavv/gooxml/spreadsheet/formula"
+	"github.com/camelliavv/gooxml/spreadsheet/reference"
 
-	"gooxml"
-	"gooxml/common"
-	"gooxml/schema/soo/sml"
-	"gooxml/vmldrawing"
+	"github.com/camelliavv/gooxml"
+	"github.com/camelliavv/gooxml/common"
+	"github.com/camelliavv/gooxml/schema/soo/sml"
+	"github.com/camelliavv/gooxml/vmldrawing"
 )
 
 // Sheet is a single sheet within a workbook.

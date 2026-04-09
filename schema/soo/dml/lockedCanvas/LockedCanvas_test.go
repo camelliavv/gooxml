@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"testing"
 
-	"gooxml/schema/soo/dml/lockedCanvas"
+	"github.com/camelliavv/gooxml/schema/soo/dml/lockedCanvas"
 )
 
 func TestLockedCanvasConstructor(t *testing.T) {

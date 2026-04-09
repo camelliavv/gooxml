@@ -14,7 +14,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"gooxml/schema/soo/ofc/sharedTypes"
+	"github.com/camelliavv/gooxml/schema/soo/ofc/sharedTypes"
 )
 
 type CT_ReadingModeInkLockDown struct {

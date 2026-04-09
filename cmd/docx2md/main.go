@@ -9,7 +9,7 @@ import (
 	"log"
 	"os"
 
-	"gooxml/document"
+	"github.com/camelliavv/gooxml/document"
 )
 
 func main() {

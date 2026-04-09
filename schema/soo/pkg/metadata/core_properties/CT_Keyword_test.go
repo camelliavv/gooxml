@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"testing"
 
-	"gooxml/schema/soo/pkg/metadata/core_properties"
+	"github.com/camelliavv/gooxml/schema/soo/pkg/metadata/core_properties"
 )
 
 func TestCT_KeywordConstructor(t *testing.T) {

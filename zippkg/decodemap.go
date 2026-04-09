@@ -11,7 +11,7 @@ import (
 	"archive/zip"
 	"path"
 
-	"gooxml/schema/soo/pkg/relationships"
+	"github.com/camelliavv/gooxml/schema/soo/pkg/relationships"
 )
 
 // OnNewRelationshipFunc is called when a new relationship has been discovered.

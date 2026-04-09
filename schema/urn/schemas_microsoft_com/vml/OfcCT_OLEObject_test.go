@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"testing"
 
-	"gooxml/schema/urn/schemas_microsoft_com/vml"
+	"github.com/camelliavv/gooxml/schema/urn/schemas_microsoft_com/vml"
 )
 
 func TestOfcCT_OLEObjectConstructor(t *testing.T) {

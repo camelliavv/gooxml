@@ -13,8 +13,8 @@ import (
 	"encoding/xml"
 	"fmt"
 
-	"gooxml"
-	"gooxml/schema/soo/dml/picture"
+	"github.com/camelliavv/gooxml"
+	"github.com/camelliavv/gooxml/schema/soo/dml/picture"
 )
 
 type WdCT_WordprocessingGroupChoice struct {

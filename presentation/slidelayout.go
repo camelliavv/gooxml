@@ -8,7 +8,7 @@
 package presentation
 
 import (
-	"gooxml/schema/soo/pml"
+	"github.com/camelliavv/gooxml/schema/soo/pml"
 )
 
 // SlideLayout

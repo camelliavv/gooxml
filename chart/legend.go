@@ -8,10 +8,10 @@
 package chart
 
 import (
-	"gooxml"
-	"gooxml/drawing"
-	"gooxml/schema/soo/dml"
-	crt "gooxml/schema/soo/dml/chart"
+	"github.com/camelliavv/gooxml"
+	"github.com/camelliavv/gooxml/drawing"
+	"github.com/camelliavv/gooxml/schema/soo/dml"
+	crt "github.com/camelliavv/gooxml/schema/soo/dml/chart"
 )
 
 type Legend struct {

@@ -10,7 +10,7 @@ package algo_test
 import (
 	"testing"
 
-	"gooxml/algo"
+	"github.com/camelliavv/gooxml/algo"
 )
 
 func TestSort(t *testing.T) {

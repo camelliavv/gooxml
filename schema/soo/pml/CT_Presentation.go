@@ -14,9 +14,9 @@ import (
 	"fmt"
 	"strconv"
 
-	"gooxml"
-	"gooxml/schema/soo/dml"
-	"gooxml/schema/soo/ofc/sharedTypes"
+	"github.com/camelliavv/gooxml"
+	"github.com/camelliavv/gooxml/schema/soo/dml"
+	"github.com/camelliavv/gooxml/schema/soo/ofc/sharedTypes"
 )
 
 type CT_Presentation struct {

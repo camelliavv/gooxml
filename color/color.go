@@ -8,7 +8,7 @@
 package color
 
 import (
-	"gooxml"
+	"github.com/camelliavv/gooxml"
 )
 
 // Color is a 24 bit color that can be converted to

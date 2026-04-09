@@ -14,7 +14,7 @@ import (
 	"fmt"
 	"regexp"
 
-	"gooxml"
+	"github.com/camelliavv/gooxml"
 )
 
 const ST_HPercentWithSymbolPattern = `0*(([5-9])|([1-9][0-9])|([1-4][0-9][0-9])|500)%`

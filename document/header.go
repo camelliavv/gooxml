@@ -11,9 +11,9 @@ import (
 	"errors"
 	"fmt"
 
-	"gooxml"
-	"gooxml/common"
-	"gooxml/schema/soo/wml"
+	"github.com/camelliavv/gooxml"
+	"github.com/camelliavv/gooxml/common"
+	"github.com/camelliavv/gooxml/schema/soo/wml"
 )
 
 // Header is a header for a document section.

@@ -8,11 +8,11 @@
 package chart
 
 import (
-	"gooxml/color"
-	"gooxml/drawing"
-	"gooxml/measurement"
-	"gooxml/schema/soo/dml"
-	crt "gooxml/schema/soo/dml/chart"
+	"github.com/camelliavv/gooxml/color"
+	"github.com/camelliavv/gooxml/drawing"
+	"github.com/camelliavv/gooxml/measurement"
+	"github.com/camelliavv/gooxml/schema/soo/dml"
+	crt "github.com/camelliavv/gooxml/schema/soo/dml/chart"
 )
 
 type SurfaceChartSeries struct {

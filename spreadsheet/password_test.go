@@ -10,7 +10,7 @@ package spreadsheet_test
 import (
 	"testing"
 
-	"gooxml/spreadsheet"
+	"github.com/camelliavv/gooxml/spreadsheet"
 )
 
 func TestKnownHashes(t *testing.T) {
@@ -18,7 +18,7 @@ func TestKnownHashes(t *testing.T) {
 		Inp string
 		Exp string
 	}{
-		{"gooxml", "DD67"},
+		{"github.com/camelliavv/gooxml", "DD67"},
 		{"", "0000"},
 	}
 	for _, tc := range td {

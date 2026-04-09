@@ -14,9 +14,9 @@ import (
 	"os"
 	"testing"
 
-	"gooxml/spreadsheet"
-	"gooxml/testhelper"
-	"gooxml/zippkg"
+	"github.com/camelliavv/gooxml/spreadsheet"
+	"github.com/camelliavv/gooxml/testhelper"
+	"github.com/camelliavv/gooxml/zippkg"
 )
 
 func TestStyleSheetUnmarshal(t *testing.T) {

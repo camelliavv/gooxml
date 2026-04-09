@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"testing"
 
-	"gooxml/schema/soo/pkg/content_types"
+	"github.com/camelliavv/gooxml/schema/soo/pkg/content_types"
 )
 
 func TestCT_OverrideConstructor(t *testing.T) {

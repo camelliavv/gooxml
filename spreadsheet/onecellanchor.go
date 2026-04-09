@@ -8,8 +8,8 @@
 package spreadsheet
 
 import (
-	"gooxml/measurement"
-	sd "gooxml/schema/soo/dml/spreadsheetDrawing"
+	"github.com/camelliavv/gooxml/measurement"
+	sd "github.com/camelliavv/gooxml/schema/soo/dml/spreadsheetDrawing"
 )
 
 // OneCellAnchor is anchored to a top-left cell with a fixed with/height

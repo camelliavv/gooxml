@@ -12,7 +12,7 @@ package dml
 import (
 	"encoding/xml"
 
-	"gooxml"
+	"github.com/camelliavv/gooxml"
 )
 
 type CT_BaseStyles struct {

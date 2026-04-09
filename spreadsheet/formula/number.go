@@ -10,7 +10,7 @@ package formula
 import (
 	"strconv"
 
-	"gooxml"
+	"github.com/camelliavv/gooxml"
 )
 
 type Number struct {

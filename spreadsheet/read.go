@@ -14,14 +14,14 @@ import (
 	"io/ioutil"
 	"os"
 
-	"gooxml"
-	"gooxml/zippkg"
+	"github.com/camelliavv/gooxml"
+	"github.com/camelliavv/gooxml/zippkg"
 )
 
 // Read reads a workbook from an io.Reader(.xlsx).
 func Read(r io.ReaderAt, size int64) (*Workbook, error) {
 	wb := New()
-	td, err := ioutil.TempDir("", "gooxml-xlsx")
+	td, err := ioutil.TempDir("", "github.com/camelliavv/gooxml-xlsx")
 	if err != nil {
 		return nil, err
 	}

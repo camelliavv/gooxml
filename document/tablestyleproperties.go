@@ -8,9 +8,9 @@
 package document
 
 import (
-	"gooxml"
-	"gooxml/measurement"
-	"gooxml/schema/soo/wml"
+	"github.com/camelliavv/gooxml"
+	"github.com/camelliavv/gooxml/measurement"
+	"github.com/camelliavv/gooxml/schema/soo/wml"
 )
 
 // TableStyleProperties are table properties as defined in a style.

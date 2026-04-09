@@ -8,7 +8,7 @@
 package document
 
 import (
-	"gooxml/schema/soo/wml"
+	"github.com/camelliavv/gooxml/schema/soo/wml"
 )
 
 // Style is a style within the styles.xml file.

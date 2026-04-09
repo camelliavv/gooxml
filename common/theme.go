@@ -7,7 +7,7 @@
 
 package common
 
-import "gooxml/schema/soo/dml"
+import "github.com/camelliavv/gooxml/schema/soo/dml"
 
 // Theme is a drawingml theme.
 type Theme struct {

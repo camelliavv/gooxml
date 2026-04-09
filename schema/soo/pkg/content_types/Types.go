@@ -12,7 +12,7 @@ package content_types
 import (
 	"encoding/xml"
 
-	"gooxml"
+	"github.com/camelliavv/gooxml"
 )
 
 type Types struct {

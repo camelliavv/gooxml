@@ -14,8 +14,8 @@ import (
 	"fmt"
 	"strconv"
 
-	"gooxml"
-	"gooxml/schema/soo/ofc/math"
+	"github.com/camelliavv/gooxml"
+	"github.com/camelliavv/gooxml/schema/soo/ofc/math"
 )
 
 type CT_FtnEdn struct {

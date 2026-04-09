@@ -8,7 +8,7 @@
 package document
 
 import (
-	"gooxml/schema/soo/wml"
+	"github.com/camelliavv/gooxml/schema/soo/wml"
 )
 
 // NumberingDefinition defines a numbering definition for a list of pragraphs.

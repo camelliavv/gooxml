@@ -13,8 +13,8 @@ import (
 	"encoding/xml"
 	"fmt"
 
-	"gooxml"
-	"gooxml/schema/purl.org/dc/elements"
+	"github.com/camelliavv/gooxml"
+	"github.com/camelliavv/gooxml/schema/purl.org/dc/elements"
 )
 
 type ElementsAndRefinementsGroupChoice struct {

@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"fmt"
 
-	"gooxml"
+	"github.com/camelliavv/gooxml"
 )
 
 func ParseUnionST_ModelId(s string) (ST_ModelId, error) {

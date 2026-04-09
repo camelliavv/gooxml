@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"testing"
 
-	"gooxml/schema/purl.org/dc/elements"
+	"github.com/camelliavv/gooxml/schema/purl.org/dc/elements"
 )
 
 func TestAnyConstructor(t *testing.T) {

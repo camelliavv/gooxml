@@ -24,4 +24,4 @@ data from one or more XML types.
 The packages of interest are gooxml/document,
 baliance/gooxml/spreadsheet and gooxml/presentation.
 */
-package gooxml // import "gooxml"
+package gooxml // import "github.com/camelliavv/gooxml"

@@ -4,11 +4,11 @@ package main
 import (
 	"log"
 
-	"gooxml/color"
-	"gooxml/measurement"
-	"gooxml/schema/soo/dml"
+	"github.com/camelliavv/gooxml/color"
+	"github.com/camelliavv/gooxml/measurement"
+	"github.com/camelliavv/gooxml/schema/soo/dml"
 
-	"gooxml/presentation"
+	"github.com/camelliavv/gooxml/presentation"
 )
 
 func main() {
@@ -30,7 +30,7 @@ func main() {
 		p.Properties().SetAlign(dml.ST_TextAlignTypeCtr)
 
 		r := p.AddRun()
-		r.SetText("gooxml")
+		r.SetText("github.com/camelliavv/gooxml")
 		r.Properties().SetSize(24 * measurement.Point)
 
 	}

@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"testing"
 
-	"gooxml/schema/soo/ofc/extended_properties"
+	"github.com/camelliavv/gooxml/schema/soo/ofc/extended_properties"
 )
 
 func TestCT_DigSigBlobConstructor(t *testing.T) {

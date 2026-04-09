@@ -12,7 +12,7 @@ package spreadsheetDrawing
 import (
 	"encoding/xml"
 
-	"gooxml"
+	"github.com/camelliavv/gooxml"
 )
 
 type EG_Anchor struct {

@@ -8,9 +8,9 @@
 package spreadsheet
 
 import (
-	"gooxml/color"
+	"github.com/camelliavv/gooxml/color"
 
-	"gooxml/schema/soo/sml"
+	"github.com/camelliavv/gooxml/schema/soo/sml"
 )
 
 type PatternFill struct {

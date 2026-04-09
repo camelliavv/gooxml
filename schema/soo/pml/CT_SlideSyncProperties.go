@@ -14,7 +14,7 @@ import (
 	"fmt"
 	"time"
 
-	"gooxml"
+	"github.com/camelliavv/gooxml"
 )
 
 type CT_SlideSyncProperties struct {

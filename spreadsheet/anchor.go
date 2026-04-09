@@ -8,7 +8,7 @@
 package spreadsheet
 
 import (
-	"gooxml/measurement"
+	"github.com/camelliavv/gooxml/measurement"
 )
 
 // Anchor is the interface implemented by anchors. It's modeled after the most
