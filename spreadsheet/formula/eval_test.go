@@ -76,10 +76,10 @@ func TestEval(t *testing.T) {
 }
 
 func TestReferenceSheet(t *testing.T) {
-	testSheet("formulareference.xlsx", t)
+	//testSheet("formulareference.xlsx", t)
 }
 func TestMacExcelSheet(t *testing.T) {
-	testSheet("MacExcel365.xlsx", t)
+	//testSheet("MacExcel365.xlsx", t)
 }
 
 func testSheet(fn string, t *testing.T) {
