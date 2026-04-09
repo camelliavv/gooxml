@@ -8,7 +8,7 @@ library for creation and editing of docx/xlsx/pptx files.
 [![GoDoc](https://godoc.org/baliance.com/gooxml?status.svg)](https://godoc.org/baliance.com/gooxml)
 [![go 1.8+](https://img.shields.io/badge/go-1.8%2B-blue.svg)](http://golang.org)
 
-![https://baliance.com/gooxml/](./_examples/preview.png "gooxml")
+[https://baliance.com/gooxml/](./_examples/preview.png "gooxml")
 
 **English** | [中文](./README.zh.md)
 
