@@ -1,7 +1,3 @@
-[English](./README.md) | **中文**
-
----
-
 **gooxml** 是一个用于创建 Office Open XML 文档（.docx、.xlsx 和 .pptx）的库。它的目标是成为创建和编辑 docx/xlsx/pptx 文件的最兼容、性能最高的 Go 库。
 
 需要 **go1.8+**，已在 1.8、1.9 和 tip 版本上测试通过。
@@ -11,6 +7,10 @@
 [![go 1.8+](https://img.shields.io/badge/go-1.8%2B-blue.svg)](http://golang.org)
 
 ![https://baliance.com/gooxml/](./_examples/preview.png "gooxml")
+
+[English](./README.md) | **中文**
+
+---
 
 ## 状态 ##
 

@@ -1,7 +1,3 @@
-**English** | [中文](./README.zh.md)
-
----
-
 **gooxml** is a library for creation of Office Open XML documents (.docx, .xlsx
 and .pptx).  It's goal is to be the most compatible and highest performance Go
 library for creation and editing of docx/xlsx/pptx files.
@@ -13,6 +9,10 @@ Requires **go1.8+**, builds are tested with 1.8, 1.9 and tip.
 [![go 1.8+](https://img.shields.io/badge/go-1.8%2B-blue.svg)](http://golang.org)
 
 ![https://baliance.com/gooxml/](./_examples/preview.png "gooxml")
+
+**English** | [中文](./README.zh.md)
+
+---
 
 ## Status ##
 
